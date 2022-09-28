@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Odev3" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PODCY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YW8-pd-AX5">
+                                <rect key="frame" x="139.33333333333334" y="87" width="111.33333333333334" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="32"/>
+                                <color key="textColor" name="AnaRenk"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AV1-hw-8RO" customClass="AnimationView">
+                                <rect key="frame" x="45" y="165.33333333333334" width="300" height="21"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Listen to your favorite podcast" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mQl-xP-93S">
+                                <rect key="frame" x="20" y="486.33333333333331" width="350" height="64.666666666666686"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="27"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="More than 1000+ best talks ever" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="le7-2L-cBm">
+                                <rect key="frame" x="72.666666666666686" y="559" width="245" height="39"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="39" id="iiL-4d-kSN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="YaziRenk2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DSn-lq-6Ah">
+                                <rect key="frame" x="91" y="651" width="208" height="36"/>
+                                <color key="backgroundColor" name="AnaRenk"/>
+                                <color key="tintColor" name="YaziRenk1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing in" subtitle="">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pl1-Kv-bP2">
+                                <rect key="frame" x="91" y="713" width="208" height="36"/>
+                                <color key="backgroundColor" name="YaziRenk1"/>
+                                <color key="tintColor" name="AnaRenk"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Sing in" subtitle="">
+                                    <fontDescription key="titleFontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Pl1-Kv-bP2" firstAttribute="leading" secondItem="DSn-lq-6Ah" secondAttribute="leading" id="5Mq-pv-hwR"/>
+                            <constraint firstItem="YW8-pd-AX5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="9E1-Hq-ViF"/>
+                            <constraint firstItem="Pl1-Kv-bP2" firstAttribute="top" secondItem="DSn-lq-6Ah" secondAttribute="bottom" constant="26" id="BBX-ON-1zD"/>
+                            <constraint firstItem="le7-2L-cBm" firstAttribute="centerX" secondItem="AV1-hw-8RO" secondAttribute="centerX" id="IOb-zJ-r0a"/>
+                            <constraint firstItem="DSn-lq-6Ah" firstAttribute="centerX" secondItem="AV1-hw-8RO" secondAttribute="centerX" id="KGG-iB-Iz5"/>
+                            <constraint firstItem="AV1-hw-8RO" firstAttribute="top" secondItem="YW8-pd-AX5" secondAttribute="bottom" constant="40" id="MWe-wo-vdx"/>
+                            <constraint firstItem="Pl1-Kv-bP2" firstAttribute="centerX" secondItem="AV1-hw-8RO" secondAttribute="centerX" id="OGv-6I-V0k"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="DSn-lq-6Ah" secondAttribute="bottom" constant="123" id="OKh-ZR-ETX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Pl1-Kv-bP2" secondAttribute="bottom" constant="61" id="Obu-NI-OQH"/>
+                            <constraint firstItem="mQl-xP-93S" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RXN-bB-nt3"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="le7-2L-cBm" secondAttribute="bottom" constant="212" id="Yt8-UY-9Qb"/>
+                            <constraint firstItem="le7-2L-cBm" firstAttribute="top" secondItem="mQl-xP-93S" secondAttribute="bottom" constant="8" symbolic="YES" id="Zuw-aH-y9C"/>
+                            <constraint firstItem="mQl-xP-93S" firstAttribute="top" secondItem="AV1-hw-8RO" secondAttribute="bottom" constant="300" id="e5D-7t-P04"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mQl-xP-93S" secondAttribute="trailing" constant="20" id="h4b-SR-DUY"/>
+                            <constraint firstItem="YW8-pd-AX5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="hEm-el-Qjk"/>
+                            <constraint firstItem="AV1-hw-8RO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="hae-q7-auf"/>
+                            <constraint firstItem="mQl-xP-93S" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iwr-t8-yZW"/>
+                            <constraint firstItem="DSn-lq-6Ah" firstAttribute="top" secondItem="le7-2L-cBm" secondAttribute="bottom" constant="53" id="mvW-AO-umk"/>
+                            <constraint firstItem="DSn-lq-6Ah" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="91" id="xA4-bp-yTd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="AV1-hw-8RO" id="7kG-GZ-WIX"/>
+                        <outlet property="textLabel" destination="YW8-pd-AX5" id="ee2-HM-baJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.692307692307693" y="-2.1327014218009479"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AnaRenk">
+            <color red="0.40400001406669617" green="0.22699999809265137" blue="0.71799999475479126" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YaziRenk1">
+            <color red="0.98000001907348633" green="0.98000001907348633" blue="0.98000001907348633" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="YaziRenk2">
+            <color red="0.27700001001358032" green="0.27700001001358032" blue="0.27700001001358032" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
